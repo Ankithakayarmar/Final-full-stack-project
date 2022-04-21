@@ -1,0 +1,90 @@
+.main{
+    width: auto;
+}
+
+nav{
+
+    width: auto;
+   padding: 0px 100px;
+background-color: black;
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo a{
+    font-size: 39px;
+    color:green;
+    font-weight: bold;
+margin-left: auto;
+}
+
+
+
+a{
+text-decoration: none;
+color: beige;
+font-size: 18px;
+transition: 0.3s all ease;
+}
+
+
+ul{
+    margin: 0px;
+    margin-right: 10px;
+}
+ul li{
+    float: left;
+    padding: 0px 15px;
+    list-style: none;
+}
+ul li a:hover{
+    color:green;
+}
+.header{
+    background-image: url(../assets/images/homepage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    background: rgba(0,0,0,.5);
+}
+
+.content h1{
+    font-size: 45px;
+
+}
+.content p{
+    padding: 0px 50px;
+    font-size: 35px;
+}
+
+button{
+    background:none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    padding: 10ox 25px;
+    border-radius: 6px;
+    transition: 0.5s all ease;
+}
+
+button:hover{
+    background: black;
+    color: green;
+}
+
+.overlay{
+  
+    height: 100vh;
+}

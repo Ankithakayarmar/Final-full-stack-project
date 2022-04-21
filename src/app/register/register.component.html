@@ -1,0 +1,56 @@
+
+<div align="center">
+    <h2> Registration </h2>
+    <br><br>
+   
+<form #reg="ngForm" (ngSubmit)="adddata(reg)">
+
+  <div class="form-group">
+    <label>Fullname : </label>
+    <input type="text" name="name"  [ngModel]="user.name" [pattern]="namePattern" #username="ngModel" placeholder="Enter name" >
+    <div *ngIf="username.errors && reg.submitted && !isValidFormSubmitted" [ngClass]="'error'">
+      <br>
+      <div *ngIf="username.errors">
+           Username not valid.
+    </div>
+  </div>
+    </div><br><br>
+  
+    <div class="form-group">
+      <label>Email ID : </label>
+      <input type="email" name="emailId"  [ngModel]="user.emailId" [pattern]="emailPattern" #userEmail="ngModel" placeholder="Enter email" >
+      <div *ngIf="userEmail.errors && reg.submitted && !isValidFormSubmitted" [ngClass]="'error'">
+        <br>
+        <div *ngIf="userEmail.errors">
+             Email not valid.
+      </div>
+    </div>
+      </div>
+     <br><br>
+
+     <div class="form-group">
+      <label> Password : </label>
+      <input type="password" name="password"  [ngModel]="user.pwd" [pattern]="pwdPattern" #password="ngModel" placeholder="Enter password" >
+        <div *ngIf="password.errors && reg.submitted && !isValidFormSubmitted" [ngClass]="'error'">
+          <br>
+          <div *ngIf="password.errors">
+             Incorrect password.
+        </div>
+      </div>
+        </div><br><br>
+        <div class="form-group">
+          <label>PhoneNumber: </label>
+          <input type="phone" name="phone"  [ngModel]="user.phone" [pattern]="phonePattern" #phone="ngModel" placeholder="Enter phonenumber" >
+            <div *ngIf="phone.errors && reg.submitted && !isValidFormSubmitted" [ngClass]="'error'">
+              <br>
+              <div *ngIf="phone.errors">
+                 Incorrect Number.
+            </div>
+          </div>
+            </div><br><br><br>
+    <button   type="submit" class="btn1" >Register</button>
+   
+    <button type="reset" class="btn">Clear</button>
+
+  </form>
+  </div>

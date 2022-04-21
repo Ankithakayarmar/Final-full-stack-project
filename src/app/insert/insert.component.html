@@ -1,0 +1,37 @@
+<div align="center">
+    <h2> Add Details </h2>
+    <br>
+  <form #insertform="ngForm" (ngSubmit)="insertdata(insertform)">
+    
+    <div class="form-group">
+     <label>Username :   </label>
+        <input type="text" #name (ngModel)="name" name="name" id="name" class="form-class">
+        </div><br>
+        <div class="form-group">
+            <label>PhoneNumber: </label>
+            <input type="phone" #phone (ngModel)="phone" name="phone" id="phone" class="form-class">
+            </div><br><br>
+   <div class="form-group">
+  <label>Food Name: </label>
+  <input type="text" #foodname (ngModel)="foodname"  name="foodname" id="foodname" class="form-class">
+   </div><br><br>
+        
+        <div class="form-group">
+            <label>Cost Price : </label>
+            <input type="text" #price (ngModel)="price" name="price" id="price" class="form-class">
+            </div><br>
+   
+   
+    <div class="form-group">
+        <label>Your Address : </label>
+        <input type="text" #address (ngModel)="address" name="address" id="address" class="form-class">
+        </div><br><br>
+       
+        <div class="item">
+        
+            <button onclick="window.location.href='/placeorder-component'" type="submit" class="btn1"  >Place Order</button>
+     
+            </div><br><br>
+            
+  </form>
+</div>

@@ -1,0 +1,14 @@
+<div align="center">
+    <h2> Delete Order</h2>
+      <br>
+     <form #deleteform="ngForm" (ngSubmit)="deletedata(deleteform)">
+      <div class="form-group">
+        <label> ID : </label>
+        <input type="text" #id (ngModel)="id" name="id" id="id" class="form-class">
+        </div> <br>
+     
+        <div class="form-group">
+          <input onclick="window.location.href='/deleteorder-component'" type="submit" value="Delete" class="btn1">
+         </div>
+    </form>
+   </div>

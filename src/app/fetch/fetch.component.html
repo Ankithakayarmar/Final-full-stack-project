@@ -1,0 +1,34 @@
+<div align="center">
+
+    <h2>View Details</h2>
+    <hr><br>
+    <table>
+        
+        <thead>
+            <tr>
+            
+                <th> ID   </th>
+                <th> Username </th>
+                <th> ContactNumber </th>
+                <th> FoodName </th>
+                <th> Price </th>
+                <th> Address </th>
+            </tr>
+        </thead>
+   
+<br>
+        <tbody>
+            <tr *ngFor="let food of fooddetails">
+                <td> {{food.id}} </td>
+                <td> {{food.name}} </td>
+                <td> {{food.phone}} </td>
+                <td> {{food.foodname}} </td>
+                <td> {{food.price}} </td>
+                
+                <td> {{food.address}} </td>
+                
+            </tr>
+                
+        </tbody>      
+    </table>
+ </div>

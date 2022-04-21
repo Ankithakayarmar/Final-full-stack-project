@@ -1,0 +1,40 @@
+<div align="center">
+    <h2> Update Book Record </h2>
+      <br>
+     <form #updateform="ngForm" (ngSubmit)="update(updateform)">
+      <div class="form-group">
+     
+        <label>Identity No.:     </label>
+          <input type="text" #id (ngModel)="id" name="id" id="id" class="form-class">
+          </div><br>
+       <div class="form-group">
+        <label>Username : </label>
+        <input type="text" #name (ngModel)="name" name="name" id="name" class="form-class">
+       </div> <br>
+      <div class="form-group">
+        <label>Phone Number: </label>
+        <input type="phone" #phone (ngModel)="phone" name="phone" id="phone" class="form-class">
+       </div><br>
+       <div class="form-group">
+        <label>Food Name : </label>
+        <input type="text" #foodname (ngModel)="foodname"  name="foodname" id="foodname" class="form-class">
+        </div><br><br>
+        <div class="form-group">
+            <label>Cost Price : </label>
+            <input type="text" #price (ngModel)="price" name="price" id="price" class="form-class">
+            </div><br>
+   
+   
+    <div class="form-group">
+        <label>Your Address : </label>
+        <input type="text" #address (ngModel)="address" name="address" id="address" class="form-class">
+        </div><br><br>
+       
+        <div class="item">
+        
+            <button onclick="window.location.href='/updateorder-component'" type="submit" class="btn1"    >Update</button>
+           
+            </div><br><br>
+            
+    </form>
+   </div>

@@ -1,0 +1,33 @@
+.btn1{
+ 
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: auto;
+}
+
+
+input[type=text]{
+width: 400px;
+padding: 12px 20px;
+
+box-sizing: border-box;
+
+margin: auto;
+}
+input[type=phone]{
+width: 400px;
+padding: 12px 20px;
+margin: auto;
+box-sizing: border-box;
+}
+h2{
+    font-size: 50px;
+    color: green;
+ }
+ 
